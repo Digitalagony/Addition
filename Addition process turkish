@@ -1,0 +1,23 @@
+while True:
+    try:
+        print("Birinci sayıyı giriniz: ")
+        sayi1 = int(input())
+        print("İkinci sayıyı giriniz: ")
+        sayi2 = int(input())
+
+        toplam = sayi1 + sayi2
+        print(f"{sayi1} + {sayi2} = {toplam}")
+    
+    except ValueError:
+        print("Lütfen sayı giriniz!")
+        continue
+
+    while True:
+         print("Çıkmak için 'q' tekrar denemek için 'r' basınız ")
+         secim = input().lower()
+         if secim == 'q':
+             quit()
+         elif secim == 'r':
+             break
+         else:
+             print("Lütfen 'q' veya 'r' yazınız")
